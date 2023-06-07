@@ -58,13 +58,14 @@ const App = () => {
       setContacts(parsedContacts);
     } else {
       localStorage.setItem('contacts', JSON.stringify(contacts));
-    }
+    } // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
     if (contacts !== prevContacts) {
       localStorage.setItem('contacts', JSON.stringify(contacts));
       setPrevContacts(contacts);
+      // eslint-disable-next-line
     }
   }, [contacts]);
 
