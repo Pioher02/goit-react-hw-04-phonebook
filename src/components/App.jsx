@@ -65,8 +65,7 @@ const App = () => {
     if (contacts !== prevContacts) {
       localStorage.setItem('contacts', JSON.stringify(contacts));
       setPrevContacts(contacts);
-      // eslint-disable-next-line
-    }
+    }// eslint-disable-next-line
   }, [contacts]);
 
   return (
