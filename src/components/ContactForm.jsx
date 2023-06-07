@@ -1,3 +1,5 @@
+import propTypes from 'prop-types';
+
 const ContactForm = ({ saveContact }) => {
   return (
     <>
@@ -53,6 +55,10 @@ const ContactForm = ({ saveContact }) => {
       </form>
     </>
   );
+};
+
+ContactForm.propTypes = {
+  saveContact: propTypes.func.isRequired,
 };
 
 export default ContactForm;

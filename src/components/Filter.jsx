@@ -1,4 +1,4 @@
-//import propTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 function Filter({ filterContact }) {
   return (
@@ -10,5 +10,9 @@ function Filter({ filterContact }) {
     </>
   );
 }
+
+Filter.propTypes = {
+  filterContact: propTypes.func.isRequired,
+};
 
 export default Filter;
